@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nazeer Gaming Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>NAZEER GAMING ADMIN</h1>
+    </header>
+
+    <section class="hero" id="adminpage">
+        <h2>Add New Game</h2>
+
+        <form id="gameForm" id="adminpage">
+            <input type="text" id="gameName"
+                placeholder="Game Name" required>
+            <br><br>
+
+            <input type="text" id="gameImage"
+                placeholder="Image URL" required>
+            <br><br>
+
+            <textarea id="gameDescription"
+                placeholder="Game Description" required></textarea>
+            <br><br>
+            <br><br>
+
+<select id="gameCategory" required>
+    <option value="">Select Category</option>
+    <option value="Action">Action</option>
+    <option value="Racing">Racing</option>
+    <option value="Adventure">Adventure</option>
+</select>
+
+<br><br>
+
+            <button type="submit">Add Game</button>
+            <div id="gameList"></div>
+        </form>
+
+        <a href="index.html">Back to Home</a>
+    </section>
+<script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,729 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080b16;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #11182b;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #00d9ff;
+    font-size: 32px;
+}
+
+nav {
+    text-align: center;
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    color: #00d9ff;
+}
+
+.hero p {
+    margin: 20px;
+    color: #cccccc;
+}
+
+button {
+    background: #00d9ff;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.games {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.game-card {
+    background: #151d33;
+    padding: 25px;
+    margin: 15px auto;
+    max-width: 300px;
+    border-radius: 12px;
+}
+
+.game-card {
+    transition: 0.3s;
+    border: 1px solid #263653;
+}
+
+.game-card:hover {
+    transform: translateY(-8px);
+    border-color: #00d9ff;
+}
+
+.game-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.game-card h3 {
+    color: #00d9ff;
+    margin-bottom: 10px;
+}
+
+.game-card button {
+    margin-top: 15px;
+}
+
+#gameSearch {
+    width: 80%;
+    max-width: 450px;
+    padding: 15px;
+    margin: 25px auto;
+    display: block;
+    background: #151d33;
+    color: white;
+    border: 2px solid #00d9ff;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#gameSearch:focus {
+    outline: none;
+    border-color: white;
+}
+.game-download {
+    text-align: center;
+    padding: 40px;
+}
+
+.download-btn {
+    display: inline-block;
+    background: #00d9ff;
+    color: black;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+form {
+    background: #111827;
+    padding: 30px;
+    max-width: 350px;
+    margin: 20px auto;
+    border-radius: 12px;
+}
+
+form input {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #00d9ff;
+    border-radius: 6px;
+    background: #222;
+    color: white;
+}
+
+form {
+    background: #111827;
+    padding: 30px;
+    max-width: 350px;
+    margin: 20px auto;
+    border-radius: 12px;
+}
+
+form input {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #00d9ff;
+    border-radius: 6px;
+    background: #222;
+    color: white;
+}
+
+form button {
+    background: #00d9ff;
+    color: black;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    border-top: 2px solid #00d9ff;
+}
+@media (max-width: 768px) {
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00d9ff;
+}
+
+    .hero {
+        padding: 20px;
+    }
+
+    .game-card {
+        width: 90%;
+        margin: 15px auto;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+.game-card {
+    background: #151e33;
+    border: 1px solid #263957;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 450px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.game-card:hover {
+    transform: translateY(-8px);
+    border-color: #00d9ff;
+    box-shadow: 0 5px 20px #00d9ff33;
+}
+
+.game-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.game-card button {
+    background: #00d9ff;
+    color: #000;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.game-card button:hover {
+    background: white;
+    box-shadow: 0 0 15px #00d9ff;
+    transform: scale(1.05);
+}
+.categories {
+    text-align: center;
+    padding: 20px;
+}
+
+.categories button {
+    background: #00d9ff;
+    color: black;
+    padding: 10px 18px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#adminPanel {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #101b35;
+    border: 1px solid #00eaff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #00eaff55;
+}
+
+#adminPanel h2 {
+    color: #00eaff;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#adminPanel input,
+#adminPanel textarea,
+#adminPanel select {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    background: #1c2945;
+    color: white;
+    border: 1px solid #00eaff;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+#adminPanel button {
+    background: #00d9e8;
+    color: #071323;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+/* Separate Admin Dashboard */
+
+#adminPage {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 35px;
+    background: #101b35;
+    border: 2px solid #00eaff;
+    border-radius: 18px;
+    box-shadow: 0 0 25px #00eaff55;
+}
+
+#adminPage h2 {
+    color: #00eaff;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+#adminPage input,
+#adminPage textarea,
+#adminPage select {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    background: #1c2945;
+    color: white;
+    border: 1px solid #00eaff;
+    border-radius: 8px;
+}
+
+#adminPage button {
+    background: #00d9e8;
+    color: #071323;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* PROFESSIONAL ADMIN DASHBOARD */
+
+#adminPage {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 35px;
+    background: linear-gradient(145deg, #101b35, #172b50);
+    border: 2px solid #00eaff;
+    border-radius: 20px;
+    box-shadow: 0 0 25px #00eaff55;
+}
+
+#adminPage h2 {
+    text-align: center;
+    color: #00eaff;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+#adminPage form {
+    max-width: 500px;
+    margin: auto;
+    padding: 25px;
+    background: #0b1428;
+    border-radius: 15px;
+}
+
+#adminPage input,
+#adminPage textarea,
+#adminPage select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px;
+    margin: 10px 0;
+    background: #1b2d4d;
+    color: white;
+    border: 1px solid #00eaff;
+    border-radius: 9px;
+}
+
+#adminPage button {
+    padding: 12px 25px;
+    background: #00d9e8;
+    color: #071323;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#adminPage button:hover {
+    background: white;
+    box-shadow: 0 0 15px #00eaff;
+}
+
+#adminPage #gameList {
+    margin-top: 30px;
+}
+.game-info {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #101b35;
+    color: white;
+    border: 1px solid #00eaff;
+    border-radius: 15px;
+}
+
+.game-info h2,
+.game-info h3 {
+    color: #00eaff;
+}
+
+.game-info li {
+    margin: 12px 0;
+}
+.missions {
+    max-width: 850px;
+    margin: 40px auto;
+    color: white;
+}
+
+.missions h2 {
+    color: #00eaff;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.mission-card {
+    background: #101b35;
+    border: 1px solid #00eaff;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.mission-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #00eaff;
+}
+
+.mission-card h3 {
+    color: #00eaff;
+}
+.gta-gallery {
+    text-align: center;
+    margin: 40px auto;
+    color: white;
+}
+
+.gta-gallery h2 {
+    color: #00eaff;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-images img {
+    width: 250px;
+    height: 160px;
+    object-fit: cover;
+    border: 2px solid #00eaff;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.gallery-images img:hover {
+    transform: scale(1.05);
+}
+.requirements {
+    max-width: 850px;
+    margin: 40px auto;
+    color: white;
+    text-align: center;
+}
+
+.requirements h2 {
+    color: #00eaff;
+}
+
+.requirement-card {
+    background: #101b35;
+    border: 1px solid #00eaff;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.requirement-card h3 {
+    color: #00eaff;
+}
+.reviews {
+    max-width: 850px;
+    margin: 40px auto;
+    text-align: center;
+    color: white;
+}
+
+.reviews h2 {
+    color: #00eaff;
+}
+
+.review-card {
+    background: #101b35;
+    border: 1px solid #00eaff;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 15px 0;
+}
+
+.review-card h3 {
+    color: #00eaff;
+}
+.gta-footer {
+    background: #080f20;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+    margin-top: 50px;
+    border-top: 2px solid #00eaff;
+}
+
+.gta-footer h2 {
+    color: #00eaff;
+}
+
+.gta-footer a {
+    display: inline-block;
+    color: #00eaff;
+    text-decoration: none;
+    margin: 15px;
+}
+
+.gta-footer a:hover {
+    color: white;
+}
+
+.copyright {
+    font-size: 13px;
+    color: #aaa;
+}
+#topBtn {
+    display: block;
+    margin: 30px auto;
+    padding: 14px 25px;
+    background: #00eaff;
+    color: #071323;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#topBtn:hover {
+    background: white;
+    box-shadow: 0 0 15px #00eaff;
+}
+.game-controls {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #101b35;
+    color: white;
+    border: 1px solid #00eaff;
+    border-radius: 15px;
+}
+
+.game-controls h2 {
+    color: #00eaff;
+    text-align: center;
+}
+
+.control-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    margin: 10px 0;
+    background: #1c2945;
+    border-radius: 8px;
+}
+
+.control-row strong {
+    color: #00eaff;
+}
+.gta-search {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px auto;
+    max-width: 600px;
+}
+
+.gta-search input {
+    flex: 1;
+    min-width: 0;
+    padding: 13px;
+    border: 1px solid #00eaff;
+    border-radius: 8px;
+    background: #101b35;
+    color: white;
+}
+
+.gta-search button {
+    padding: 13px 20px;
+    background: #00eaff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.gta-faq {
+    max-width: 800px;
+    margin: 40px auto;
+    color: white;
+}
+
+.gta-faq h2 {
+    color: #00eaff;
+    text-align: center;
+}
+
+.gta-faq details {
+    background: #101b35;
+    border: 1px solid #00eaff;
+    border-radius: 10px;
+    padding: 18px;
+    margin: 12px 0;
+}
+
+.gta-faq summary {
+    color: #00eaff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.gta-faq p {
+    line-height: 1.6;
+}
+/* Mobile Responsive Design */
+
+@media (max-width: 768px) {
+
+    .game-info,
+    .missions,
+    .requirements,
+    .reviews,
+    .gta-gallery,
+    .game-controls,
+    .gta-faq {
+        width: 90%;
+        margin: 25px auto;
+        box-sizing: border-box;
+    }
+
+    .gallery-images img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .gta-search {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .gta-search button {
+        width: 100%;
+    }
+
+    .mission-card,
+    .requirement-card,
+    .review-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .game-controls {
+        padding: 15px;
+    }
+
+}
+.gta-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 30px auto;
+}
+
+.gta-header h1 {
+    color: #00eaff;
+    margin: 0;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 13px 22px;
+    background: #00eaff;
+    color: #071323;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.download-btn:hover {
+    background: white;
+    box-shadow: 0 0 15px #00eaff;
+}
